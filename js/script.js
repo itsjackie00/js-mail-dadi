@@ -61,17 +61,17 @@ elButton.addEventListener('click', function () {
         console.log(user);
         if (computer > user) {
             document.getElementById('message').innerHTML = `Computer is the winner !!! `;
-            document.getElementById('numbers').innerHTML = `Computer choosed ${computer} user choosed ${user}`;
+           // document.getElementById('numbers').innerHTML = `Computer choosed ${computer} user choosed ${user}`;
 
         } else if (computer === user) {
             document.getElementById('message').innerHTML = `Is a draw`;
-            document.getElementById('numbers').innerHTML = `Computer choosed ${computer} user choosed ${user}`;
+            //document.getElementById('numbers').innerHTML = `Computer choosed ${computer} user choosed ${user}`;
 
 
 
         } else {
             document.getElementById('message').innerHTML = `User is the winner  !!!`;
-            document.getElementById('numbers').innerHTML = `Computer choosed ${computer} user choosed ${user}`;
+            //document.getElementById('numbers').innerHTML = `Computer choosed ${computer} user choosed ${user}`;
         }
         document.getElementById('dado-pc').src = `${images[computer]}`;
         document.getElementById('dado-user').src = `${images[user]}`;
